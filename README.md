@@ -35,7 +35,7 @@
 ### Установка
 1. Клонировать репозиторий:
 ```bash
-git clone https://github.com/yourusername/quran-telegram-webapp.git
+git clone https://github.com/Amir-Suleimanov/tg-mini-app-bot.git
 ```
 Настроить бэкенд:
 
