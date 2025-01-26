@@ -42,7 +42,7 @@ git clone https://github.com/Amir-Suleimanov/tg-mini-app-bot.git
 ```bash
 cd backend
 python -m venv venv
-source venv/bin/activate
+venv/Scripts/activate
 pip install -r requirements.txt
 cd django
 python manage.py migrate
