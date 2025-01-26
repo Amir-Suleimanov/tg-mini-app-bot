@@ -1,0 +1,30 @@
+/* src/components/AyahItem/AyahItem.css */
+.ayah-item {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.number {
+    min-width: 50px; /* Adjust as needed */
+    text-align: left;
+    margin-right: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.text-arabic {
+    font-weight: bold;
+    direction: rtl; /* Right to Left for Arabic text */
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.translation {
+    font-style: italic;
+    text-align: left;
+}

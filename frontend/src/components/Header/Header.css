@@ -1,0 +1,52 @@
+/* src/components/Header/Header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.tabs {
+    display: flex;
+    gap: 20px;
+    color: #fff;
+}
+
+input[type="text"] {
+    padding: 5px;
+    width: 120px;
+    border-radius: 5px;
+    border-color: #ffffff00;
+}
+
+.detail-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.detail-header .back-button {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.detail-header span {
+    flex: 1;
+    text-align: center;
+    color: #fff;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    color: #fff;
+}

@@ -1,0 +1,31 @@
+/* src/components/SurahDetail.css */
+.surah-detail {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.detail-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.detail-header button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.detail-header span {
+    flex: 1;
+    text-align: center;
+}
+
+.ayah-list {
+    overflow-y: auto;
+    height: calc(100vh - 60px); /* Adjust height according to header */
+}

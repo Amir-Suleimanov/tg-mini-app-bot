@@ -1,0 +1,26 @@
+/* src/components/SurahItem.css */
+.surah-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.surah-item > div {
+    flex: 1;
+    text-align: center; /* Center the content inside each div */
+}
+
+.number {
+    text-align: left;
+}
+
+.ayats-count {
+    text-align: right;
+}
+
+.surah-item-link {
+    text-decoration: none;
+    color: inherit;
+}
