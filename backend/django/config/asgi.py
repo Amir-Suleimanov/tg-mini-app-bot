@@ -4,18 +4,23 @@ from aiogram import Bot, Dispatcher
 from aiogram.webhook.aiohttp_server import SimpleRequestHandler
 from aiohttp import web
 
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
 
 # Инициализация Django ASGI приложения
 django_application = get_asgi_application()
 
 # Инициализация бота и диспетчера
-bot = Bot(token="7588469201:AAFQ_s6a0Mer1iBl2TJh0A_Lk70JJD-J3J0")
+bot = Bot(token=os.getenv('TOKEN'))
 dp = Dispatcher()
 
 async def on_startup(app):
     await bot.set_webhook(
-        "https://c52d5967-c3e0-4a3f-a4b1-01d4b6481125-00-1l6th12zvxqso.sisko.replit.dev/webhook",
+        "https://127.0.0.1:5173/webhook",
         drop_pending_updates=True
     )
 
